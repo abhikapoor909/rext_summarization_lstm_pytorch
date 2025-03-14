@@ -1,0 +1,5 @@
+After learning about LSTMs and the Bahdanau attention mechanism, I attempted to implement a text summarization project. However, training the model proved to be quite challenging due to the large dataset size and high-dimensional feature space. To make it feasible on Kaggle, I had to significantly reduce the input dimensions and set the batch size to the lowest possible value.
+
+Initially, my model suffered from severe overfitting, so I introduced dropout layers to improve generalization. Although this helped, the results are still suboptimal, primarily due to frequent crashes and memory limitations on Kaggle. The constrained computational resources make it difficult to experiment with larger architectures or fine-tune hyperparameters effectively.
+
+Moving forward, I plan to explore alternative approaches, such as leveraging pretrained transformer models like BART or T5, which might offer better performance with limited resources. Additionally, optimizing data preprocessing, using mixed precision training, and implementing gradient accumulation could help alleviate memory constraints and improve model efficiency.
